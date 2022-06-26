@@ -125,6 +125,8 @@
 <!-- AdminLTE for demo purposes -->
 <script src="assets/dist/js/demo.js"></script>
 
+<script src="assets/ckeditor/ckeditor.js"></script>
+
 <script type="text/javascript">
     $( document ).ready(function() {
         // buoc 1

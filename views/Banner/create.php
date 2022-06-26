@@ -45,7 +45,10 @@
                                     <option value="_self"></option>
                                 </select>
                             </div>
-
+                            <div class="form-group">
+                                <label>Mô tả</label>
+                                <textarea name="description" id="editor1" rows="10" cols="80" class="form-control" placeholder=""></textarea>
+                            </div>
                             <div class="form-group">
                                 <label for="exampleInputFile">File input</label>
                                 <input type="file" id="exampleInputFile">
