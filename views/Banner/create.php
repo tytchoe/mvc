@@ -23,7 +23,7 @@
                     </div>
                     <!-- /.box-header -->
                     <!-- form start -->
-                    <form role="form">
+                    <form role="form" method="post" action="">
                         <div class="box-body">
                             <div class="form-group">
                                 <label for="exampleInputTilte">Tiêu đề</label>
@@ -37,7 +37,6 @@
                                 <label for="exampleInputUrl">Liên kết</label>
                                 <input type="text" class="form-control" id="url" name="url" placeholder="">
                             </div>
-
                             <div class="form-group">
                                 <label>Chọn Target</label>
                                 <select class="form-control">
@@ -50,14 +49,23 @@
                                 <textarea name="description" id="editor1" rows="10" cols="80" class="form-control" placeholder=""></textarea>
                             </div>
                             <div class="form-group">
-                                <label for="exampleInputFile">File input</label>
-                                <input type="file" id="exampleInputFile">
-
-                                <p class="help-block">Example block-level help text here.</p>
+                                <label>Loại</label>
+                                <select class="form-control">
+                                    <option value="1">Banner trang chủ</option>
+                                    <option value="2">Banner trái</option>
+                                    <option value="2">Banner phải</option>
+                                    <option value="2">Banner trên</option>
+                                    <option value="2">Banner dưới</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputUrl">Vị trí</label>
+                                <input min="0" type="number" class="form-control" id="position" name="position" placeholder="">
+                            </div>
                             </div>
                             <div class="checkbox">
                                 <label>
-                                    <input type="checkbox"> Check me out
+                                    <input type="checkbox"> Trạng thái
                                 </label>
                             </div>
                         </div>

@@ -13,6 +13,10 @@ class BannerController
     public function create()
     {
         // gọi đến view
+        if (!empty($_POST)){
+
+
+        }
         include_once 'views/banner/create.php';
     }
 
