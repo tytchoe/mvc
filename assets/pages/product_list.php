@@ -1,7 +1,6 @@
-<!-- Content Header (Page header) -->
 <section class="content-header">
     <h1>
-        Danh Sách sản phẩm
+        Danh Sách Sản Phẩm
     </h1>
     <ol class="breadcrumb">
         <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
@@ -12,14 +11,10 @@
 
 <!-- Main content -->
 <section class="content">
-
-    <!-- /.row -->
     <div class="row">
         <div class="col-xs-12">
             <div class="box">
                 <div class="box-header">
-                    <h3 class="box-title"></h3>
-
                     <div class="box-tools">
                         <div class="input-group input-group-sm hidden-xs" style="width: 150px;">
                             <input type="text" name="table_search" class="form-control pull-right" placeholder="Search">
@@ -41,16 +36,16 @@
                             <th>Hành Động</th>
                         </tr>
                         <?php foreach ($arrProducts as $product):?>
-                            <tr class="product-<?= $product[0] ?>">
-                                <td><?= $product[0] ?></td>
-                                <td><?= $product[1] ?></td>
-                                <td><?= number_format($product[2],0,',','.') ?>đ</td>
-                                <td><?= $product[3] ?></td>
-                                <td>
-                                    <button type="button" class="btn btn-primary btn-sm">Sửa</button>
-                                    <button data-id="<?= $product[0] ?>" type="button" class="btn btn-danger btn-sm btnDelete">Xóa</button>
-                                </td>
-                            </tr>
+                        <tr class="product-<?= $product[0] ?>">
+                            <td><?= $product[0] ?></td>
+                            <td><?= $product[1] ?></td>
+                            <td><?= number_format($product[2],0,',','.') ?>đ</td>
+                            <td><?= $product[3] ?></td>
+                            <td>
+                                <button type="button" class="btn btn-primary btn-sm">Sửa</button>
+                                <button data-id="<?= $product[0] ?>" type="button" class="btn btn-danger btn-sm btnDelete">Xóa</button>
+                            </td>
+                        </tr>
                         <?php endforeach; ?>
                     </table>
                 </div>
@@ -60,4 +55,3 @@
         </div>
     </div>
 </section>
-<!-- /.content -->

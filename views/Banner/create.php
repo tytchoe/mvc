@@ -1,1 +1,1 @@
-<?php
+<h1>view hien thi trang them banner</h1>

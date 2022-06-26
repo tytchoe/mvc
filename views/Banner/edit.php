@@ -1,4 +1,1 @@
-<?php
-
-
-?>
+<h1>view hien thi trang edit</h1>
