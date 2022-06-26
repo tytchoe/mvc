@@ -1,4 +1,7 @@
 <?php
+
+include_once 'models/Banner.php';
+
 class BannerController
 {
     // thêm => danh sách => sửa =>  xóa
@@ -14,7 +17,10 @@ class BannerController
     {
         // gọi đến view
         if (!empty($_POST)){
+            $param = $_POST;
 
+            $model = new Banner();
+            $model->store($param);
 
         }
         include_once 'views/banner/create.php';
